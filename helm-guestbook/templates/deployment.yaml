@@ -19,6 +19,7 @@ spec:
       labels:
         app: {{ template "helm-guestbook.name" . }}
         release: {{ .Release.Name }}
+        demo: guild
     spec:
       containers:
         - name: {{ .Chart.Name }}
